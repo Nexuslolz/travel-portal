@@ -1,0 +1,77 @@
+@import "variables.scss";
+
+.page-main__stories{
+    @extend %global;
+    @extend %stretch;
+    @extend %max-width-desktop;
+    background: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    padding: 40px 120px;
+}
+
+.stories{
+    @extend %global;
+    @extend %stretch;
+    @extend %max-width-desktop;
+    flex-direction: column;
+}
+.stories__header{
+    @extend %header-font;
+    @extend %max-width-desktop;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 85px;
+}
+.stories-content{
+    @extend %global;
+    @extend %stretch;
+    @extend %max-width-desktop;
+    flex-direction: column; 
+    gap: 30px;
+}
+.stories-content__wrapper{
+    @extend %global;
+    @extend %max-width-desktop;
+    flex-direction: row;
+    gap: 40px;
+}
+.stories-content__img{
+    width: 400px;
+    height: 250px;
+    border-radius: 16px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+}
+.stories-content__item{
+    @extend %global;
+    flex-direction: column;
+    margin: 0;
+}
+.stories-content__header{
+    font-size: 35px;
+    line-height: 42px;    
+    color: #0D606F;  
+    margin: 0;  
+    font-weight: 400;
+}
+.stories-content__text{
+    @extend %main-font;
+    color: #0D606F;
+    margin-bottom: 0;
+}
+.stories-content__link{
+    @extend %link;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+.stories-btn{
+    @extend %btn;
+    @extend %stretch;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 20%;
+    margin-top: 40px;
+}

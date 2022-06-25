@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+.page-main__steps{
+    @extend %global;
+    @extend %stretch;
+    flex-direction: column;
+    @extend %max-width-desktop;
+    margin-bottom: 90px;
+}
+.steps{
+    @extend %global;
+    @extend %stretch;
+    flex-direction: column;
+    @extend %max-width-desktop;
+}
+.steps__header{
+    @extend %header-font;
+    width: 100%;
+    text-align: center
+}
+.steps-content{
+    @extend %global;
+    @extend %stretch;
+    flex-direction: row;
+    @extend %max-width-desktop;
+    justify-content: center;
+}
+.steps-content__item{
+    @extend %global;
+    @extend %stretch;
+    flex-direction: column;
+    position: relative;
+}
+.steps-content__img{
+    border-radius: 16px;
+}
+.steps-content__text{
+    @extend %main-font;
+    color: #0D606F;
+    text-align: start;
+    width: max-content;
+    position: absolute;
+    top: 110px;
+}

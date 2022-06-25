@@ -1,0 +1,70 @@
+.steps-content__item, .steps-content, .steps, .page-main__steps {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Aleo", serif;
+}
+
+.steps-content__item, .steps-content, .steps, .page-main__steps {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.steps__header {
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+}
+
+.steps-content__text {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.steps-content, .steps, .page-main__steps {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.page-main__steps {
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.steps {
+  flex-direction: column;
+}
+
+.steps__header {
+  width: 100%;
+  text-align: center;
+}
+
+.steps-content {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.steps-content__item {
+  flex-direction: column;
+  position: relative;
+}
+
+.steps-content__img {
+  border-radius: 16px;
+}
+
+.steps-content__text {
+  color: #0D606F;
+  text-align: start;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 110px;
+}

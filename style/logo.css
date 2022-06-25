@@ -1,0 +1,29 @@
+.logo__link {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Aleo", serif;
+}
+
+.logo__link {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.logo__link:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+.logo__link:active {
+  opacity: 0.3;
+}
+
+.logo__header {
+  font-family: "Magra";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+}

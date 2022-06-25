@@ -1,0 +1,131 @@
+.preview-search, .preview-content, .preview, .page-main__preview {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Aleo", serif;
+}
+
+.preview-search__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #0D606F;
+  border-radius: 10px;
+  border: none;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.45), 0px 5px 3px 0px rgba(21, 86, 98, 0.2);
+  transition: 0.25s;
+}
+.preview-search__btn:hover {
+  background: rgba(13, 96, 111, 0.6);
+  cursor: pointer;
+  transition: 0.25s;
+}
+.preview-search__btn:active {
+  background: rgb(8, 61, 70);
+  transition: 0.1s;
+}
+
+.preview-search, .preview-content, .preview {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.page-main__preview {
+  width: 83%;
+  max-width: 1440px;
+  margin-bottom: 25%;
+}
+
+.preview {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.preview-content {
+  flex-direction: column;
+  font-family: "Aleo";
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.preview-content__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  width: 70%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.preview-content__text {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.preview-search {
+  flex-direction: row;
+  position: relative;
+}
+
+.preview-search__input {
+  padding: 30px 35px;
+  width: 68%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  border: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+  font-style: italic;
+  transition: 0.25s;
+}
+.preview-search__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+  font-style: italic;
+}
+.preview-search__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+  font-style: italic;
+}
+.preview-search__input::placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+  font-style: italic;
+}
+.preview-search__input:hover {
+  transition: 0.25s;
+  background: rgba(255, 255, 255, 0.8);
+}
+.preview-search__input:focus {
+  outline: none;
+  transition: 0.25s;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.preview-search__btn {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  font-size: 24px;
+  line-height: 32px;
+  z-index: 5;
+  width: 18%;
+}

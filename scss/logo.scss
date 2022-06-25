@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.logo__link{
+    @extend %global;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.25s;
+    }
+    &:active{
+        opacity: 0.3;
+    }
+}
+.logo__header{
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}

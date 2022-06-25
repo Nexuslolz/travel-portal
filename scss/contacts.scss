@@ -1,0 +1,39 @@
+@import "variables.scss"; 
+
+.contacts{
+    @extend %global;
+    margin: 0 100px;
+    max-width: 100%;
+}
+.contacts-list{
+    @extend %global;
+    @extend %stretch;
+    list-style: none;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    width: max-content;
+}
+.contact-list__img{
+    width: 31px;
+    height: 31px;
+}
+.contacts-list__item{
+    width: min-content;
+    transition: 0.25s;
+    &:hover{
+        transform: scale(0.9);
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    &:active{
+        transform: scale(1);
+    }
+}
+.page-footer__text{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,48 @@
+.main-nav__list, .main-nav {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Aleo", serif;
+}
+
+.main-nav__list {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav__btn {
+  display: none;
+}
+
+.page-header__nav {
+  display: block;
+  margin: 0 0;
+}
+
+.main-nav__list {
+  flex-direction: row;
+  width: 38vw;
+  max-width: 700px;
+  list-style: none;
+  height: 95px;
+}
+
+.main-nav__item {
+  transition: 0.25s;
+}
+.main-nav__item:hover {
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+.main-nav__item:active {
+  opacity: 0.3;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}

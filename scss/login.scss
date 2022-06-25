@@ -1,0 +1,159 @@
+@import "variables.scss";
+
+.login__modal{
+    display: none;
+}
+.login__modal_open{
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    max-width: 650px;
+    min-width: 450px;
+    z-index: 50;
+    background-image: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.login{
+    display: block;
+    margin: 0 auto;
+}
+.login__btn{
+    @extend %btn;
+}
+.login-popup{
+    @extend %global;
+    flex-direction: column;
+    @extend %stretch;
+    gap:20px
+}
+.login-popup__header{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #0D606F;
+}
+.login-popup__wrapper{
+    @extend %global;
+    @extend %stretch;
+    flex-direction: column;
+    width: 35vw;
+    max-width: 435px
+}
+.login-popup-input{
+    @extend %global;
+    @extend %stretch;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width:435px;
+}
+.login-popup-input__wrapper{
+    @extend %global;
+    @extend %stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width:435px;
+}
+.login-popup__devide{
+    content: "";
+    height: 1px;
+    width: 90%;
+    background-color: rgba(13, 96, 111, 0.5);
+}
+.login-popup__button,
+.login-popup-input__button{
+    @extend %btn;
+    width: 100%;
+    max-width:435px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#google-login{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    color: #0D606F;
+    &:hover{
+        background-color: #70a7ff;
+        cursor: pointer;
+        transition: 0.25s;
+        color: white;
+    }
+    &:active{
+        background-color: #70a7ff76;
+        transition: 0.1s;
+    }
+}
+#facebook-login{
+    background-color: #1877F2;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    &:hover{
+        background-color: rgba(24, 118, 242, 0.7);
+        cursor: pointer;
+        transition: 0.25s;
+    }
+    &:active{
+        background: rgb(19, 91, 185);
+        transition: 0.1s;
+    }
+}
+.login-popup-input__label{
+    @extend %main-font;
+    font-size: 16px;
+    line-height: 19px;
+    color:#0D606F;
+}
+.login-popup-input__input{
+    border-radius: 10px;
+    border: none;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width:435px;
+    box-sizing: border-box;
+}
+.login-popup-input__input:disabled{
+    background: #D5E4E6;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+#mark{
+    position: absolute;
+    top: 185px;
+    color: rgba(13, 96, 111, 0.5);
+    width: 90%;
+    text-align: center;
+    margin-top:15px ;
+}
+#mark::before,
+#mark::after{
+    @extend %element;
+    width: 45%;
+    height: 1px;
+    background-color: rgba(13, 96, 111, 0.5);
+    top: 10px;
+}
+#mark::after{
+    left: 0px;
+}
+#mark::before{
+    right: 0px;
+}
+.login-popup__text{
+    color: rgba(13, 96, 111, 0.5);
+    margin-bottom: 15px;
+}
+.login-popup__link{
+    @extend %link;
+    font-size: 13px;
+}
