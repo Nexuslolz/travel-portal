@@ -6,7 +6,7 @@
     flex-direction: column;
     @extend %max-width-desktop;
     margin-bottom: 90px;
-    @media(max-width:390px){
+    @media(max-width:395px){
         margin-bottom: 30px;
     }
 }
@@ -35,7 +35,7 @@
     @media(max-width:510px){
         font-size: 20px;
     }
-    @media(max-width:390px){
+    @media(max-width:395px){
         font-size: 14px;
     }
 }
@@ -45,7 +45,7 @@
     flex-direction: row;
     @extend %max-width-desktop;
     justify-content: center;
-    @media(max-width:390px){
+    @media(max-width:395px){
         justify-content: space-between;
     }
 }
@@ -55,7 +55,7 @@
     flex-direction: column;
     position: relative;
     width: 25%;
-    @media(max-width:390px){
+    @media(max-width:395px){
         margin: 0;
     }
 }
@@ -77,7 +77,7 @@
     @media(max-width:510px){
         width: 50px;
     }
-    @media(max-width:390px){
+    @media(max-width:395px){
         width: 70px;
     }
 }
@@ -109,7 +109,7 @@
         line-height: 12px;
         margin-top: -50px;
     }
-    @media(max-width:390px){
+    @media(max-width:395px){
         margin-top: -19px;
     }
 }

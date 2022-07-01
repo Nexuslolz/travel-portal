@@ -112,7 +112,7 @@
     @media(max-width:400px){
         background-size: 475px;
     }
-    @media(max-width:390px){
+    @media(max-width:395px){
         background: url(../img/mobile/fon.png) no-repeat top/contain,
          url(../img/mobile/background.jpg) no-repeat top/contain,
          url(../img/mobile/background2.jpg) no-repeat bottom / 390px 46.7%;
@@ -134,7 +134,7 @@
     z-index: -52;
     width: 100%;
     max-width: 1440px;
-    @media(max-width:390px){
+    @media(max-width:395px){
         display: none;
     }
 }
@@ -158,7 +158,7 @@
     @media(max-width:900px){
         padding: 0 15px;
     }
-    @media(max-width:390px){
+    @media(max-width:395px){
         background-color: transparent;
         box-shadow: none;
         margin: 40px auto;
