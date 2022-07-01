@@ -35,6 +35,11 @@
   flex-direction: column;
   margin-bottom: 90px;
 }
+@media (max-width: 390px) {
+  .page-main__steps {
+    margin-bottom: 30px;
+  }
+}
 
 .steps {
   flex-direction: column;
@@ -44,19 +49,91 @@
   width: 100%;
   text-align: center;
 }
+@media (max-width: 1150px) {
+  .steps__header {
+    font-size: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .steps__header {
+    font-size: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .steps__header {
+    font-size: 25px;
+  }
+}
+@media (max-width: 630px) {
+  .steps__header {
+    font-size: 25px;
+  }
+}
+@media (max-width: 510px) {
+  .steps__header {
+    font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .steps__header {
+    font-size: 14px;
+  }
+}
 
 .steps-content {
   flex-direction: row;
   justify-content: center;
 }
+@media (max-width: 390px) {
+  .steps-content {
+    justify-content: space-between;
+  }
+}
 
 .steps-content__item {
   flex-direction: column;
   position: relative;
+  width: 25%;
+}
+@media (max-width: 390px) {
+  .steps-content__item {
+    margin: 0;
+  }
 }
 
 .steps-content__img {
   border-radius: 16px;
+  width: 100px;
+}
+@media (max-width: 1150px) {
+  .steps-content__img {
+    width: 90px;
+  }
+}
+@media (max-width: 900px) {
+  .steps-content__img {
+    width: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .steps-content__img {
+    width: 70px;
+  }
+}
+@media (max-width: 630px) {
+  .steps-content__img {
+    width: 60px;
+  }
+}
+@media (max-width: 510px) {
+  .steps-content__img {
+    width: 50px;
+  }
+}
+@media (max-width: 390px) {
+  .steps-content__img {
+    width: 70px;
+  }
 }
 
 .steps-content__text {
@@ -67,4 +144,38 @@
   width: max-content;
   position: absolute;
   top: 110px;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 1150px) {
+  .steps-content__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .steps-content__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin: -15px auto 0 auto;
+  }
+}
+@media (max-width: 630px) {
+  .steps-content__text {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: -30px;
+  }
+}
+@media (max-width: 510px) {
+  .steps-content__text {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: -50px;
+  }
+}
+@media (max-width: 390px) {
+  .steps-content__text {
+    margin-top: -19px;
+  }
 }

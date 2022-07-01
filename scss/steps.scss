@@ -6,6 +6,9 @@
     flex-direction: column;
     @extend %max-width-desktop;
     margin-bottom: 90px;
+    @media(max-width:390px){
+        margin-bottom: 30px;
+    }
 }
 .steps{
     @extend %global;
@@ -16,7 +19,25 @@
 .steps__header{
     @extend %header-font;
     width: 100%;
-    text-align: center
+    text-align: center;
+    @media(max-width:1150px){
+        font-size: 35px;
+    }
+    @media(max-width:900px){
+        font-size: 30px;
+    }
+    @media(max-width:800px){
+        font-size: 25px;
+    }
+    @media(max-width:630px){
+        font-size: 25px;
+    }
+    @media(max-width:510px){
+        font-size: 20px;
+    }
+    @media(max-width:390px){
+        font-size: 14px;
+    }
 }
 .steps-content{
     @extend %global;
@@ -24,15 +45,41 @@
     flex-direction: row;
     @extend %max-width-desktop;
     justify-content: center;
+    @media(max-width:390px){
+        justify-content: space-between;
+    }
 }
 .steps-content__item{
     @extend %global;
     @extend %stretch;
     flex-direction: column;
     position: relative;
+    width: 25%;
+    @media(max-width:390px){
+        margin: 0;
+    }
 }
 .steps-content__img{
     border-radius: 16px;
+    width: 100px;
+    @media(max-width:1150px){
+        width: 90px;
+    }
+    @media(max-width:900px){
+        width: 80px;
+    }
+    @media(max-width:800px){
+        width: 70px;
+    }
+    @media(max-width:630px){
+        width: 60px;
+    }
+    @media(max-width:510px){
+        width: 50px;
+    }
+    @media(max-width:390px){
+        width: 70px;
+    }
 }
 .steps-content__text{
     @extend %main-font;
@@ -41,4 +88,28 @@
     width: max-content;
     position: absolute;
     top: 110px;
+    width: 100%;
+    text-align: center;
+    @media(max-width:1150px){
+        font-size: 16px;
+        line-height: 20px;
+    }
+    @media(max-width:900px){
+        font-size: 14px;
+        line-height: 18px;
+        margin: -15px auto 0 auto;
+    }
+     @media(max-width:630px){
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: -30px;
+    }
+    @media(max-width:510px){
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: -50px;
+    }
+    @media(max-width:390px){
+        margin-top: -19px;
+    }
 }

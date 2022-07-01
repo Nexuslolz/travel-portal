@@ -81,6 +81,12 @@
   display: none;
 }
 
+@media (max-width: 390px) {
+  .page-header__login {
+    position: absolute;
+  }
+}
+
 .login__modal_open {
   display: block;
   position: fixed;
@@ -95,15 +101,60 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
 }
+@media (max-width: 800px) {
+  .login__modal_open {
+    min-width: 350px;
+  }
+}
+@media (max-width: 700px) {
+  .login__modal_open {
+    min-width: 350px;
+  }
+}
 
 .login {
   display: block;
   margin: 0 auto;
 }
 
+@media (max-width: 1150px) {
+  .login__btn {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 900px) {
+  .login__btn {
+    font-size: 12px;
+    padding: 2px 15px;
+  }
+}
+@media (max-width: 630px) {
+  .login__btn {
+    font-size: 10px;
+    padding: 2px 13px;
+  }
+}
+@media (max-width: 630px) {
+  .login__btn {
+    font-size: 8px;
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 390px) {
+  .login__btn {
+    display: none;
+  }
+}
+
 .login-popup {
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 700px) {
+  .login-popup {
+    gap: 0;
+  }
 }
 
 .login-popup__header {
@@ -113,11 +164,22 @@
   font-size: 24px;
   color: #0D606F;
 }
+@media (max-width: 700px) {
+  .login-popup__header {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 
 .login-popup__wrapper {
   flex-direction: column;
   width: 35vw;
   max-width: 435px;
+}
+@media (max-width: 700px) {
+  .login-popup__wrapper {
+    width: 70%;
+  }
 }
 
 .login-popup-input {
@@ -150,6 +212,12 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+@media (max-width: 600px) {
+  .login-popup__button,
+.login-popup-input__button {
+    min-width: 250px;
+  }
 }
 
 #google-login {
@@ -200,6 +268,11 @@
   max-width: 435px;
   box-sizing: border-box;
 }
+@media (max-width: 700px) {
+  .login-popup-input__input {
+    min-width: 250px;
+  }
+}
 
 .login-popup-input__input:disabled {
   background: #D5E4E6;
@@ -213,6 +286,11 @@
   width: 90%;
   text-align: center;
   margin-top: 15px;
+}
+@media (max-width: 700px) {
+  #mark {
+    top: 159px;
+  }
 }
 
 #mark::before,
@@ -235,7 +313,23 @@
   color: rgba(13, 96, 111, 0.5);
   margin-bottom: 15px;
 }
+@media (max-width: 700px) {
+  .login-popup__text {
+    font-size: 10px;
+  }
+}
 
 .login-popup__link {
   font-size: 13px;
+}
+@media (max-width: 700px) {
+  .login-popup__link {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 700px) {
+  .login-popup__btn-text {
+    font-size: 12px;
+  }
 }

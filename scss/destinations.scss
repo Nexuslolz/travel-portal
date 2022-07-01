@@ -13,6 +13,10 @@
     margin-bottom: 80px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    overflow-y: hidden;
+    @media(max-width:390px){
+        margin-bottom: 43px;
+    }
 }
 .destination{
     @extend %global;
@@ -25,28 +29,102 @@
     @extend %header-font;
     @extend %max-width-desktop;
     text-align: center;
+    @media(max-width:1150px){
+        font-size: 35px;
+    }
+    @media(max-width:900px){
+        font-size: 30px;
+    }
+    @media(max-width:800px){
+        font-size: 25px;
+    }
+    @media(max-width:630px){
+        font-size: 25px;
+    }
+    @media(max-width:510px){
+        font-size: 20px;
+    }
+    @media(max-width:390px){
+        font-size: 14px;
+        margin-bottom: 0;
+    }
 }
 .destination-slider{
     @extend %global;
     position: relative;
-    // left: -538px;
     left: -37%;
+    @media(max-width:390px){
+        left: 15px;
+    }
 }
 .destination-slider__slide{
     @extend %global;
     flex-direction: row;
     gap: 60px;
+    @media(max-width:600px){
+        gap: 20px;
+    }
+}
+.destination-slider__img{
+    width: 100%;
+    @media(max-width:390px){
+        border-radius: 12px;
+        
+    }
 }
 .destination-slider__item{
     @extend %global;
     position: relative;
     transition: 0.25s;
+    width: 800px;
     &:hover{
         transform: scale(0.98);
         transition: 0.25s;
     }
     &:active{
         transform: scale(1);
+    }
+    @media(max-width:1350px){
+        width: 750px;
+    }
+    @media(max-width:1250px){
+        width: 700px;
+    }
+    @media(max-width:1180px){
+        width: 650px;
+    }
+    @media(max-width:1100px){
+        width: 600px;
+    }
+    @media(max-width:1000px){
+        width:550px ;
+    }
+    @media(max-width:935px){
+        width: 500px;
+    }
+    @media(max-width:865px){
+        width: 460px;
+    }
+    @media(max-width:815px){
+        width: 400px;
+    }
+    @media(max-width:710px){
+        width: 350px;
+    }
+    @media(max-width:650px){
+        width:300px ;
+    }
+    @media(max-width:555px){
+        width:280px;
+    }
+    @media(max-width:480px){
+        width: 245px;
+    }
+    @media(max-width:410px){
+        width: 215px;
+    }
+    @media(max-width:390px){
+        width: 93vw;
     }
 }
 .destination-slider__text{
@@ -60,6 +138,14 @@
     top: 725px;
     transition: 0.25s;
     left: 20px;
+    @media(max-width:1000px){
+        display: none;
+    }
+    @media(max-width:390px){
+        display: inline;
+        top: 0;
+        font-size: 20px;
+    }
 }
 .destination__wrapper{
     @extend %global;
@@ -67,11 +153,20 @@
     height: 50%;
     @extend %max-width-desktop;
     margin: 24px auto 40px auto;
+    @media(max-width:390px){
+        margin: 0;
+        position: relative;
+    }
 }
 .breadcrumb{
     @extend %global;
     width: 50%;
     align-items: center;
+    @media(max-width:390px){
+        position: absolute;
+        left: 25%;
+        top: -20px;
+    }
 }
 .breadcrumb__list{
     @extend %global;
@@ -97,6 +192,19 @@
     &:active{
         transform: scale(1);
     }
+    @media(max-width:1000px){
+        width: 15px;
+        height: 15px;
+    }
+    @media(max-width:500px){
+        width: 10px;
+        height: 10px;
+    }
+    @media(max-width:390px){
+        width: 8px;
+        height: 8px;
+        margin-right: 5px;
+    }
 }
 .breadcrumb__item_active{
     background-color: #F2785C;
@@ -111,4 +219,48 @@
     gap: 5%;
     width: 16%;
     margin-bottom: 10px;
+    @media(max-width:1350px){
+        font-size: 20px;
+        padding: 5px 20px;
+    }
+    @media(max-width:1200px){
+        font-size: 18px;
+        padding: 3px 15px;
+    }
+    @media(max-width:950px){
+        font-size: 16px;
+        padding: 3px 13px;
+    }
+    @media(max-width:815px){
+        font-size: 14px;
+        padding: 3px 10px;
+    }
+    @media(max-width:720px){
+        font-size: 10px;
+        padding: 2px 10px;
+        line-height: 20px;
+        width: 22%;
+    }
+    @media(max-width:390px){
+        width: 24%;
+        margin-top: 10px;
+        padding: 4px 10px;
+    }
+    @media(max-width:360px){
+        width: 27%;
+    }
+}
+.destination-btn__img{
+    @media(max-width:1150px){
+        width: 33px;
+    }
+    @media(max-width:900px){
+        width: 27px;
+    }
+    @media(max-width:630px){
+        width: 21px;
+    }
+    @media(max-width:630px){
+        width: 16px;
+    }
 }

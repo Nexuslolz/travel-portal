@@ -16,17 +16,210 @@
 
 .page {
   flex-direction: column;
-  overflow-x: hidden;
   align-items: center;
   justify-content: space-between;
   scroll-behavior: smooth;
-  width: 100vw;
-  background: url(../img/desktop/background.jpg) no-repeat top, url(../img/desktop/backgrond2.jpg) no-repeat bottom;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .page__body {
+  overflow-x: hidden;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  background: url(../img/desktop/backgrond2.jpg) no-repeat bottom;
+}
+@media (max-width: 1250px) {
+  .page__body {
+    background-size: 1350px;
+  }
+}
+@media (max-width: 1230px) {
+  .page__body {
+    background-size: 1450px;
+  }
+}
+@media (max-width: 1150px) {
+  .page__body {
+    background-size: 1152px;
+  }
+}
+@media (max-width: 1080px) {
+  .page__body {
+    background-size: 1222px;
+  }
+}
+@media (max-width: 990px) {
+  .page__body {
+    background-size: 1322px;
+  }
+}
+@media (max-width: 990px) {
+  .page__body {
+    background-size: 1382px;
+  }
+}
+@media (max-width: 900px) {
+  .page__body {
+    background-size: 1122px;
+  }
+}
+@media (max-width: 870px) {
+  .page__body {
+    background-size: 1202px;
+  }
+}
+@media (max-width: 993px) {
+  .page__body {
+    background-size: 1352px;
+  }
+}
+@media (max-width: 942px) {
+  .page__body {
+    background-size: 1382px;
+  }
+}
+@media (max-width: 901px) {
+  .page__body {
+    background-size: 1152px;
+  }
+}
+@media (max-width: 865px) {
+  .page__body {
+    background-size: 1192px;
+  }
+}
+@media (max-width: 850px) {
+  .page__body {
+    background-size: 1052px;
+  }
+}
+@media (max-width: 773px) {
+  .page__body {
+    background-size: 1092px;
+  }
+}
+@media (max-width: 750px) {
+  .page__body {
+    background-size: 1100px;
+  }
+}
+@media (max-width: 705px) {
+  .page__body {
+    background-size: 1152px;
+  }
+}
+@media (max-width: 666px) {
+  .page__body {
+    background-size: 1222px;
+  }
+}
+@media (max-width: 640px) {
+  .page__body {
+    background-size: 1250px;
+  }
+}
+@media (max-width: 634px) {
+  .page__body {
+    background-size: 1322px;
+  }
+}
+@media (max-width: 630px) {
+  .page__body {
+    background-size: 1032px;
+  }
+}
+@media (max-width: 610px) {
+  .page__body {
+    background: url(../img/mobile/background2.jpg) no-repeat bottom/560px;
+  }
+}
+@media (max-width: 580px) {
+  .page__body {
+    background-size: 590px;
+  }
+}
+@media (max-width: 548px) {
+  .page__body {
+    background-size: 620px;
+  }
+}
+@media (max-width: 538px) {
+  .page__body {
+    background-size: 650px;
+  }
+}
+@media (max-width: 515px) {
+  .page__body {
+    background-size: 620px;
+  }
+}
+@media (max-width: 510px) {
+  .page__body {
+    background-size: 480px;
+  }
+}
+@media (max-width: 495px) {
+  .page__body {
+    background-size: 455px;
+  }
+}
+@media (max-width: 490px) {
+  .page__body {
+    background-size: 470px;
+  }
+}
+@media (max-width: 445px) {
+  .page__body {
+    background-size: 505px;
+  }
+}
+@media (max-width: 415px) {
+  .page__body {
+    background-size: 470px;
+  }
+}
+@media (max-width: 400px) {
+  .page__body {
+    background-size: 475px;
+  }
+}
+@media (max-width: 390px) {
+  .page__body {
+    background: url(../img/mobile/fon.png) no-repeat top/contain, url(../img/mobile/background.jpg) no-repeat top/contain, url(../img/mobile/background2.jpg) no-repeat bottom/390px 46.7%;
+  }
+}
+@media (max-width: 349px) {
+  .page__body {
+    background: url(../img/mobile/background2.jpg) no-repeat bottom/390px 48.7%;
+  }
+}
+@media (max-width: 322px) {
+  .page__body {
+    background: url(../img/mobile/background2.jpg) no-repeat bottom/390px 49.7%;
+  }
+}
+
+.page__background {
+  position: absolute;
+  z-index: -52;
+  width: 100%;
+  max-width: 1440px;
+}
+@media (max-width: 390px) {
+  .page__background {
+    display: none;
+  }
+}
+
+.page__background-down {
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  max-width: 1440px;
+  top: 65%;
 }
 
 .page-header {
@@ -36,6 +229,20 @@
   box-sizing: border-box;
   justify-content: space-around;
   position: relative;
+}
+@media (max-width: 900px) {
+  .page-header {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 390px) {
+  .page-header {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 40px auto;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-main {
