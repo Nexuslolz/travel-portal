@@ -118,10 +118,17 @@
          url(../img/mobile/background2.jpg) no-repeat bottom / 390px 46.7%;
      }
      @media(max-width:349px){
-        background: url(../img/mobile/background2.jpg) no-repeat bottom / 390px 48.7%;     }
+        
+        background: url(../img/mobile/fon.png) no-repeat top/contain,
+         url(../img/mobile/background.jpg) no-repeat top/contain,
+         url(../img/mobile/background2.jpg) no-repeat bottom / 390px 48.7%;   
+      }
      @media(max-width:322px){
-        background: url(../img/mobile/background2.jpg) no-repeat bottom / 390px 49.7%;     }
-}
+        background: url(../img/mobile/fon.png) no-repeat top/contain,
+         url(../img/mobile/background.jpg) no-repeat top/contain, 
+         url(../img/mobile/background2.jpg) no-repeat bottom / 390px 49.7%;   
+      }
+    }
 .page__background{
     position: absolute;
     z-index: -52;
