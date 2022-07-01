@@ -107,6 +107,9 @@
     height: 1px;
     width: 90%;
     background-color: rgba(13, 96, 111, 0.5);
+    @media(max-width:395px){
+        margin: 8px;
+    }
 }
 .login-popup__button,
 .login-popup-input__button{
@@ -192,7 +195,7 @@
     width: 45%;
     height: 1px;
     background-color: rgba(13, 96, 111, 0.5);
-    top: 10px;
+    top: 8px;
 }
 #mark::after{
     left: 0px;
