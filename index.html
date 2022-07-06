@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="./style/preview.css" />
     <link rel="stylesheet" href="./style/steps.css" />
     <link rel="stylesheet" href="./style/destinations.css" />
+    <link rel="stylesheet" href="./style/slider.css" />
     <link rel="stylesheet" href="./style/stories.css" />
     <link rel="stylesheet" href="./style/contacts.css" />
     <title>Travel Portal</title>
@@ -109,17 +110,16 @@
               </div>
               <div class="login-popup__text" id="mark">or</div>
               <div class="login-popup__wrapper">
-                <form class="login-popup-input">
+                <form name="reg" class="login-popup-input">
                   <div class="login-popup-input__wrapper">
                     <label class="login-popup-input__label" for="email-login"
                       >E-mail</label
                     >
                     <input
-                      class="login-popup-input__input"
+                      class="login-popup-input__input em"
                       type="email"
                       id="email-login"
                       required
-                      disabled
                     />
                   </div>
                   <div class="login-popup-input__wrapper">
@@ -127,7 +127,7 @@
                       >Password</label
                     >
                     <input
-                      class="login-popup-input__input"
+                      class="login-popup-input__input pass"
                       type="password"
                       id="pass-login"
                       required
@@ -136,18 +136,22 @@
                   <button
                     class="login-popup-input__button"
                     id="login-login"
-                    type="submit"
+                    type="button"
                   >
                     Sign In
                   </button>
                 </form>
-                <a href="#" class="login-popup__link">Forgot Your Password?</a>
+                <a href="#" class="login-popup__link remember-pass"
+                  >Forgot Your Password?</a
+                >
               </div>
               <div class="login-popup__devide"></div>
-              <div class="login-popup__wrapper">
+              <div class="login-popup__wrapper registration">
                 <span class="login-popup__text"
                   >Don’t have an account?
-                  <a href="#" class="login-popup__link"> Register</a></span
+                  <a href="#" class="login-popup__link register">
+                    Register</a
+                  ></span
                 >
               </div>
             </div>
@@ -219,13 +223,6 @@
         <div class="destination">
           <h2 class="destination__header">POPULAR DESTINATIONS</h2>
           <div class="destination-slider">
-            <button class="destination-slider__btn-prev">
-              <img
-                src="./img/PREVarrow-slider.svg"
-                alt="prev"
-                class="destination-slider__btn"
-              />
-            </button>
             <div class="destination-slider__slide">
               <div class="destination-slider__item">
                 <picture class="destination-slider__img">
@@ -236,7 +233,7 @@
                   <img
                     src="./img/desktop/spain.jpg"
                     alt="destinations"
-                    class="destination-slider__img"
+                    class="destination-slider__img picture"
                   />
                 </picture>
 
@@ -251,7 +248,7 @@
                   <img
                     src="./img/desktop/japan.jpg"
                     alt="destinations"
-                    class="destination-slider__img"
+                    class="destination-slider__img picture"
                   />
                 </picture>
                 <span class="destination-slider__text">JAPAN</span>
@@ -265,35 +262,14 @@
                   <img
                     src="./img/desktop/usa.jpg"
                     alt="destinations"
-                    class="destination-slider__img"
+                    class="destination-slider__img picture"
                   />
                 </picture>
                 <span class="destination-slider__text">USA</span>
               </div>
             </div>
-            <div class="destination-slider__btn-next">
-              <!-- <img
-                src="./img/NEXTarrow-slider.svg"
-                alt="next"
-                class="destination-slider__btn"
-              /> -->
-            </div>
           </div>
-          <div class="destination__wrapper">
-            <div class="breadcrumb">
-              <ul class="breadcrumb__list">
-                <li class="breadcrumb__item">
-                  <a href="#" class="breadcrumb__link"></a>
-                </li>
-                <li class="breadcrumb__item breadcrumb__item_active">
-                  <a href="#" class="breadcrumb__link"></a>
-                </li>
-                <li class="breadcrumb__item">
-                  <a href="#" class="breadcrumb__link"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <div class="destination__wrapper"></div>
           <button class="destination-btn" type="button">
             <img
               src="./img/arrow-btn.svg"
@@ -510,5 +486,12 @@
     <script src="./js/burger-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
