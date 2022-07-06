@@ -3,8 +3,36 @@
 .destination-slider__btn-prev,
 .destination-slider__btn-next {
     display: none;
+    @media(max-width:395px){
+        display: block;
+        position: absolute;
+        visibility: visible;
+        top: 48%;
+        z-index: 55;
+        border: none;
+        background-color: transparent;
+        transition: 0.25s;
+        width: 13%;
+        display: flex;
+        justify-content: center;
+        &:hover{
+            transform: scale(0.85);
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        &:active{
+        .destination-slider__btn{
+            opacity: 0.7;
+        }
+        }
+    }
 }
-
+.destination-slider__btn-prev{
+   left: 2%;
+}
+.destination-slider__btn-next{
+    left: 85vw;
+}
 .page-main__destinations{
     @extend %global;
     @extend %stretch;
@@ -15,7 +43,7 @@
     scroll-behavior: smooth;
     overflow-y: hidden;
     @media(max-width:395px){
-        margin-bottom: 43px;
+        margin-bottom: 34px;
     }
 }
 .destination{
@@ -50,81 +78,61 @@
     }
 }
 .destination-slider{
-    @extend %global;
-    position: relative;
-    left: -37%;
-    @media(max-width:395px){
-        left: 15px;
-    }
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
 }
 .destination-slider__slide{
-    @extend %global;
-    flex-direction: row;
-    gap: 60px;
-    @media(max-width:600px){
-        gap: 20px;
+    display: flex;
+    width: 100%;
+}
+.destination-slider__item{
+    position: relative;
+    transition: 0.4s;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: grab;
+    &:hover{
+        transform: scale(0.95);
+        transition: 0.25s;
+    }
+    &:active{
+        cursor: grabbing;
+    }
+    @media (max-width:395px){
+        &:hover{
+            transform: scale(0.98);
+            transition: 0.25s;
+        } 
     }
 }
 .destination-slider__img{
     width: 100%;
-    @media(max-width:395px){
-        border-radius: 12px;
-        
-    }
-}
-.destination-slider__item{
-    @extend %global;
-    position: relative;
-    transition: 0.25s;
-    width: 800px;
-    &:hover{
-        transform: scale(0.98);
-        transition: 0.25s;
-    }
-    &:active{
-        transform: scale(1);
-    }
-    @media(max-width:1350px){
-        width: 750px;
-    }
-    @media(max-width:1250px){
+    @media(max-width:1200px){
         width: 700px;
     }
-    @media(max-width:1180px){
-        width: 650px;
-    }
-    @media(max-width:1100px){
+    @media(max-width:950px){
         width: 600px;
     }
-    @media(max-width:1000px){
-        width:550px ;
-    }
-    @media(max-width:935px){
+    @media(max-width:850px){
         width: 500px;
     }
-    @media(max-width:865px){
-        width: 460px;
-    }
-    @media(max-width:815px){
+    @media(max-width:700px){
         width: 400px;
     }
-    @media(max-width:710px){
-        width: 350px;
+    @media(max-width:600px){
+        width: 300px;
     }
-    @media(max-width:650px){
-        width:300px ;
+    @media(max-width:450px){
+        width: 200px;
     }
-    @media(max-width:555px){
-        width:280px;
-    }
-    @media(max-width:480px){
-        width: 245px;
-    }
-    @media(max-width:410px){
-        width: 215px;
+    @media(max-width:900px){
     }
     @media(max-width:395px){
         width: 93vw;
+        border-radius: 12px;
     }
 }
 .destination-slider__text{
@@ -135,16 +143,17 @@
     line-height: 42px;
     color: #FFFFFF;
     position: absolute;
-    top: 725px;
+    top: 90%;
     transition: 0.25s;
-    left: 20px;
-    @media(max-width:1000px){
+    left: 5%;
+    @media(max-width:900px){
         display: none;
     }
     @media(max-width:395px){
         display: inline;
-        top: 0;
+        top: 3px;
         font-size: 20px;
+        left: 5%;
     }
 }
 .destination__wrapper{
@@ -153,15 +162,18 @@
     height: 50%;
     @extend %max-width-desktop;
     margin: 24px auto 40px auto;
+    @media(max-width:500px){
+        margin: 12px auto 20px auto;
+    }
     @media(max-width:395px){
         margin: 0;
         position: relative;
     }
 }
 .breadcrumb{
-    @extend %global;
-    width: 50%;
-    align-items: center;
+    @media(min-width:395px){
+        display: none;
+    }
     @media(max-width:395px){
         position: absolute;
         left: 25%;
