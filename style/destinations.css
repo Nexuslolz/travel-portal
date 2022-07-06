@@ -213,7 +213,7 @@
 }
 @media (max-width: 395px) {
   .destination-slider__img {
-    width: 50%;
+    width: 93vw;
     border-radius: 12px;
   }
 }
