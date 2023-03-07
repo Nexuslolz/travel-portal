@@ -14,9 +14,9 @@
     @media(max-width:450px){
         margin-bottom: 10%;
     }
-  @media(max-width:395px){
-         margin-bottom: 14%;
-  }
+    @media(max-width:435px){
+        margin-bottom: 14%;
+    }
 }
 .preview{
     @extend %global;
@@ -24,7 +24,7 @@
     align-items: flex-start;
     @extend %max-width-desktop;
     gap: 25px;
-    @media(max-width:395px){
+    @media(max-width:435px){
         gap: 35px;
     }
 }
@@ -69,9 +69,9 @@
         line-height: 30px;
         margin-bottom: 0;
         margin-top: 5px;
-    } 
-    
-    @media(max-width:395px){
+    }
+
+    @media(max-width:435px){
         display: none;
     }
 }
@@ -89,7 +89,7 @@
         line-height: 18px;
 
     }
-     @media(max-width:630px){
+    @media(max-width:630px){
         font-size: 12px;
         line-height: 15px;
 
@@ -99,7 +99,7 @@
         line-height: 12px;
 
     }
-    @media(max-width:395px){
+    @media(max-width:435px){
         display: none;
     }
 }
@@ -140,44 +140,44 @@
     transition: 0.25s;
     background: rgba(255, 255, 255, 0.85);
     }
-    
+
     @media(max-width: 1150px){
         font-size: 20px;
         line-height: 25px;
         padding: 20px 25px;
         &::placeholder{
             font-size: 20px;
-        }    
+        }
     }
     @media(max-width:900px){
         padding: 15px 25px;
         font-size: 18px;
         &::placeholder{
             font-size: 18px;
-        } 
+        }
     }
-     @media(max-width:800px){
+    @media(max-width:800px){
         padding: 10px 20px;
         font-size: 14px;
         &::placeholder{
             font-size: 14px;
-        }   
+        }
     }
     @media(max-width:630px){
         padding: 5px 15px;
         font-size: 12px;
         &::placeholder{
             font-size: 12px;
-        }   
+        }
     }
     @media(max-width:510px){
         padding: 0px 15px;
         font-size: 10px;
         &::placeholder{
             font-size: 10px;
-        }   
+        }
     }
-    @media(max-width:395px){
+    @media(max-width:435px){
         padding: 10px 15px;
         font-size: 12px;
         box-sizing: border-box;
@@ -185,7 +185,7 @@
         border-radius: 13px;
         &::placeholder{
             font-size: 12px;
-        }   
+        }
     }
 }
 .preview-search__btn{
@@ -239,7 +239,7 @@
         padding: 4px;
         width: 15%;
     }
-    @media(max-width:395px){
+    @media(max-width:435px){
         font-size: 11px;
         line-height: 12px;
         top: 16%;

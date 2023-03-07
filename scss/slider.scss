@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    
+
 }
 .destination-item {
     position: relative;
@@ -34,7 +34,7 @@
     width: 19%;
     height: 95%;
     cursor: pointer;
-    @media (max-width:395px){
+    @media (max-width:435px){
         opacity: 1;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -42,7 +42,7 @@
         height: 15%;
         top: 42%;
         border: none;
-        background-color: transparent;    
+        background-color: transparent;
         z-index: 55;
         transition: 0.25s;
         &:hover{
@@ -59,14 +59,14 @@
     left: -1%;
     width: 20%;
     background-image: url(../img/PREVarrow-slider.svg);
-    @media(max-width:395px){
+    @media(max-width:435px){
         left: 3.5%;
     }
 }
 .slick-arrow.slick-next {
     right: 0;
     background-image: url(../img/NEXTarrow-slider.svg);
-    @media(max-width:395px){
+    @media(max-width:435px){
         right: 3.5%;
     }
 }
@@ -81,7 +81,7 @@
     justify-content: center;
     padding: 0;
     margin-top: 1.5%;
-    @media(max-width:395px){
+    @media(max-width:435px){
         bottom: 12px;
         position: absolute;
         left: 0;
@@ -120,7 +120,7 @@
             width: 10px;
             height: 10px;
         }
-        @media(max-width:395px){
+        @media(max-width:435px){
             width: 8px;
             height: 8px;
             margin-right: 5px;

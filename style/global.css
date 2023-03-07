@@ -186,7 +186,7 @@
     background-size: 475px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .page__body {
     background: url(../img/mobile/fon.png) no-repeat top/contain, url(../img/mobile/background.jpg) no-repeat top/contain, url(../img/mobile/background2.jpg) no-repeat bottom/390px 46.7%;
   }
@@ -208,7 +208,7 @@
   width: 100%;
   max-width: 1440px;
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .page__background {
     display: none;
   }
@@ -235,7 +235,7 @@
     padding: 0 15px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .page-header {
     background-color: transparent;
     box-shadow: none;

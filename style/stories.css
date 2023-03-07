@@ -48,8 +48,7 @@
 
 .stories-content__link {
   font-weight: bold;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #0D606F;
   transition: 0.2s;
 }

@@ -13,9 +13,9 @@
     @media(max-width:415px){
         padding: 20px 10px;
     }
-   @media(max-width:395px){
+    @media(max-width:395px){
     padding: 10px 10px;
-   }
+    }
 }
 
 .stories{
@@ -63,7 +63,7 @@
     @extend %global;
     @extend %stretch;
     @extend %max-width-desktop;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 30px;
     @media(max-width:395px){
         gap: 0;
@@ -111,9 +111,9 @@
 }
 .stories-content__header{
     font-size: 35px;
-    line-height: 42px;    
-    color: #0D606F;  
-    margin: 0;  
+    line-height: 42px;
+    color: #0D606F;
+    margin: 0;
     font-weight: 400;
     @media(max-width:1150px){
         font-size: 22px;

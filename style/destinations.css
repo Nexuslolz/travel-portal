@@ -55,9 +55,9 @@
 .destination-slider__btn-next {
   display: none;
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .destination-slider__btn-prev,
-.destination-slider__btn-next {
+  .destination-slider__btn-next {
     display: block;
     position: absolute;
     visibility: visible;
@@ -71,13 +71,13 @@
     justify-content: center;
   }
   .destination-slider__btn-prev:hover,
-.destination-slider__btn-next:hover {
+  .destination-slider__btn-next:hover {
     transform: scale(0.85);
     transition: 0.25s;
     cursor: pointer;
   }
   .destination-slider__btn-prev:active .destination-slider__btn,
-.destination-slider__btn-next:active .destination-slider__btn {
+  .destination-slider__btn-next:active .destination-slider__btn {
     opacity: 0.7;
   }
 }
@@ -97,7 +97,7 @@
   scroll-behavior: smooth;
   overflow-y: hidden;
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .page-main__destinations {
     margin-bottom: 34px;
   }
@@ -136,7 +136,7 @@
     font-size: 20px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .destination__header {
     font-size: 14px;
     margin-bottom: 0;
@@ -160,7 +160,6 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  cursor: -webkit-grab;
   cursor: grab;
 }
 .destination-slider__item:hover {
@@ -168,10 +167,9 @@
   transition: 0.25s;
 }
 .destination-slider__item:active {
-  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .destination-slider__item:hover {
     transform: scale(0.98);
     transition: 0.25s;
@@ -211,7 +209,7 @@
     width: 200px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .destination-slider__img {
     width: 93vw;
     border-radius: 12px;
@@ -235,7 +233,7 @@
     display: none;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .destination-slider__text {
     display: inline;
     top: 3px;
@@ -253,19 +251,19 @@
     margin: 12px auto 20px auto;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .destination__wrapper {
     margin: 0;
     position: relative;
   }
 }
 
-@media (min-width: 395px) {
+@media (min-width: 435px) {
   .breadcrumb {
     display: none;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .breadcrumb {
     position: absolute;
     left: 25%;
@@ -309,7 +307,7 @@
     height: 10px;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .breadcrumb__item {
     width: 8px;
     height: 8px;
@@ -362,7 +360,7 @@
     width: 22%;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 435px) {
   .destination-btn {
     width: 24%;
     margin-top: 10px;

@@ -112,29 +112,28 @@
     @media(max-width:400px){
         background-size: 475px;
     }
-    @media(max-width:395px){
+    @media(max-width:435px){
         background: url(../img/mobile/fon.png) no-repeat top/contain,
-         url(../img/mobile/background.jpg) no-repeat top/contain,
-         url(../img/mobile/background2.jpg) no-repeat bottom / 390px 46.7%;
-     }
-     @media(max-width:349px){
-        
+        url(../img/mobile/background.jpg) no-repeat top/contain,
+        url(../img/mobile/background2.jpg) no-repeat bottom / 390px 46.7%;
+    }
+    @media(max-width:349px){
         background: url(../img/mobile/fon.png) no-repeat top/contain,
-         url(../img/mobile/background.jpg) no-repeat top/contain,
-         url(../img/mobile/background2.jpg) no-repeat bottom / 390px 48.7%;   
-      }
-     @media(max-width:322px){
+        url(../img/mobile/background.jpg) no-repeat top/contain,
+        url(../img/mobile/background2.jpg) no-repeat bottom / 390px 48.7%;
+    }
+    @media(max-width:322px){
         background: url(../img/mobile/fon.png) no-repeat top/contain,
-         url(../img/mobile/background.jpg) no-repeat top/contain, 
-         url(../img/mobile/background2.jpg) no-repeat bottom / 390px 49.7%;   
-      }
+        url(../img/mobile/background.jpg) no-repeat top/contain,
+        url(../img/mobile/background2.jpg) no-repeat bottom / 390px 49.7%;
+    }
 }
 .page__background{
     position: absolute;
     z-index: -52;
     width: 100%;
     max-width: 1440px;
-    @media(max-width:395px){
+    @media(max-width:435px){
         display: none;
     }
 }
@@ -158,14 +157,14 @@
     @media(max-width:900px){
         padding: 0 15px;
     }
-    @media(max-width:395px){
+    @media(max-width:435px){
         background-color: transparent;
         box-shadow: none;
         margin: 40px auto;
         justify-content: space-between;
         align-items: center;
     }
-    
+
 }
 .page-main{
     @extend %global;
@@ -173,7 +172,6 @@
     @extend %stretch;
     @extend %max-width-desktop;
     box-sizing: border-box;
-    // padding: 0 36px;
 }
 .page-footer{
     @extend %global;
@@ -192,9 +190,9 @@
     line-height: 21px;
 }
 input{
-   &:focus {
+&:focus {
     outline:none;
-    }   
+    }
 }
 input:disabled{
     cursor: not-allowed;
