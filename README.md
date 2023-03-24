@@ -5,7 +5,7 @@ https://nexuslolz.github.io/travel-portal/
 
 ## Preview
 
-<img src='img/travel.gif' width='550'>
+<img src='img/travel.gif' width='350'>
 
 ## Описание
 
